@@ -223,7 +223,7 @@ def _to_cq_card(text: str) -> str:
     "astrbot_plugin_electricity_monitor",
     "Tom?",
     "electricity balance monitor with optional auto checks",
-    "1.0.0",
+    "1.1.0",
 )
 class ElectricityMonitorPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
