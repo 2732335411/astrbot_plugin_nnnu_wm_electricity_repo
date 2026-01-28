@@ -1,0 +1,12 @@
+name: astrbot_plugin_nnnu_wm_electricity
+version: 1.0.0
+author: "Tom?"
+description: |
+  属于你们宿舍的电费提示小助手
+  - 电费余额查询（南宁师范大学-武鸣校区）
+  - 电费低于阈值自动提醒
+  - 余额增加（充值）提醒
+  - 支持订阅/退订提醒会话
+  - 支持账号密码自动刷新 AppUserToken（可选）
+display_name: 南宁师范大学-武鸣校区电费提醒
+repo: https://github.com/2732335411/astrbot_plugin_nnnu_wm_electricity_repo

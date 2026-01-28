@@ -1,0 +1,12 @@
+{
+  "electricity_token": "YOUR_APP_USER_TOKEN",
+  "electricity_account": "ACCOUNT_OPTIONAL",
+  "electricity_password": "PASSWORD_OPTIONAL",
+  "threshold": 30.0,
+  "check_interval_minutes": 60,
+  "auto_check": true,
+  "auto_refresh_token": true,
+  "last_balance": null,
+  "last_check_ts": null,
+  "use_onebot11_card": true
+}

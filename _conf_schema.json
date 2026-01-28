@@ -1,0 +1,57 @@
+{
+  "electricity_token": {
+    "description": "\u7535\u8d39\u67e5\u8be2 AppUserToken\uff08\u53ef\u9009\uff0c\u8d26\u53f7\u5bc6\u7801\u53ef\u81ea\u52a8\u83b7\u53d6\uff09",
+    "type": "string",
+    "hint": "\u9009\u586b"
+  },
+  "electricity_account": {
+    "description": "\u767b\u5f55\u8d26\u53f7\uff08\u7528\u4e8e\u81ea\u52a8\u5237\u65b0 Token\uff09",
+    "type": "string",
+    "hint": "\u9009\u586b"
+  },
+  "electricity_password": {
+    "description": "\u767b\u5f55\u5bc6\u7801\uff08\u7528\u4e8e\u81ea\u52a8\u5237\u65b0 Token\uff09",
+    "type": "string",
+    "hint": "\u9009\u586b"
+  },
+  "threshold": {
+    "description": "\u4f4e\u7535\u8d39\u63d0\u9192\u9608\u503c\uff08\u5143\uff09",
+    "type": "float",
+    "default": 30.0
+  },
+  "check_interval_minutes": {
+    "description": "\u81ea\u52a8\u68c0\u67e5\u95f4\u9694\uff08\u5206\u949f\uff09",
+    "type": "int",
+    "default": 60
+  },
+  "auto_check": {
+    "description": "\u662f\u5426\u5f00\u542f\u81ea\u52a8\u68c0\u67e5",
+    "type": "bool",
+    "default": true
+  },
+  "auto_refresh_token": {
+    "description": "Token \u8fc7\u671f\u65f6\u81ea\u52a8\u5237\u65b0",
+    "type": "bool",
+    "default": true
+  },
+  "notify_origins": {
+    "description": "\u8ba2\u9605\u4f1a\u8bdd\u5217\u8868\uff08\u5185\u90e8\u4f7f\u7528\uff09",
+    "type": "list",
+    "default": []
+  },
+  "last_balance": {
+    "description": "\u4e0a\u6b21\u7535\u8d39\u4f59\u989d\uff08\u5185\u90e8\u4f7f\u7528\uff09",
+    "type": "float",
+    "default": null
+  },
+  "last_check_ts": {
+    "description": "\u4e0a\u6b21\u81ea\u52a8\u68c0\u67e5\u65f6\u95f4\u6233\uff08\u5185\u90e8\u4f7f\u7528\uff09",
+    "type": "float",
+    "default": null
+  },
+  "use_onebot11_card": {
+    "description": "QQ OneBot11 \u53d1\u9001\u5361\u7247\u6d88\u606f\uff08\u4ec5\u63d0\u9192\u6d88\u606f\uff09",
+    "type": "bool",
+    "default": true
+  }
+}
