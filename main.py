@@ -221,7 +221,7 @@ def _to_cq_card(text: str) -> str:
 
 @register(
     "astrbot_plugin_electricity_monitor",
-    "codex",
+    "Tom?",
     "electricity balance monitor with optional auto checks",
     "1.0.0",
 )
