@@ -269,6 +269,13 @@ class ElectricityMonitorPlugin(Star):
         _GLOBAL_MONITOR_TASK = self._monitor_task
         _GLOBAL_MONITOR_OWNER = self
 
+    def _restart_monitor_task(self) -> None:
+        if self._monitor_task and not self._monitor_task.done():
+            self._monitor_task.cancel()
+        self._monitor_task = None
+        self._stopped = False
+        self._ensure_monitor_task()
+
     async def on_unload(self):
         self._stopped = True
         if self._monitor_task and not self._monitor_task.done():
@@ -442,7 +449,10 @@ class ElectricityMonitorPlugin(Star):
             yield event.plain_result("⚠️ 间隔必须大于等于 1 分钟。")
             return
         self.config["check_interval_minutes"] = int(minutes)
+        self.config["last_check_ts"] = None
         self.config.save_config()
+        if self._get_config("auto_check", True):
+            self._restart_monitor_task()
         yield event.plain_result(f"✅ 已更新检查间隔为 {minutes} 分钟。")
 
     @filter.command("电费监控开")
